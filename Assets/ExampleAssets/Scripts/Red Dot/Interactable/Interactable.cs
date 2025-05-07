@@ -1,0 +1,12 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using DG.Tweening;
+using UnityEngine;
+
+public class Interactable : MonoBehaviour
+{    public virtual void Interact()
+    {
+        Debug.Log("Interacted");
+    }
+}
