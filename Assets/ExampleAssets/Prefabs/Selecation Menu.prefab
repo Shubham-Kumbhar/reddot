@@ -253,6 +253,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PeremeterPopUp: {fileID: 6986755740104682759}
+  onPannel2Button: {fileID: 0}
+  onPannel1PopUP: {fileID: 0}
+  onPannel2PopUP: {fileID: 0}
+  MapPop: {fileID: 0}
+  MapPRefab: {fileID: 0}
 --- !u!1 &2161138417992998774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1426,9 +1431,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6436296556991084072}
   - {fileID: 69385026684025658}
   - {fileID: 313049845699413314}
-  - {fileID: 6436296556991084072}
   m_Father: {fileID: 121205397980743162}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
