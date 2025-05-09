@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class StartGame : Interactable
 {
     // Start is called before the first frame update
+    public GameObject JoinGameCube;
     public GameObject PeremeterPopUp;
     public Button onPannel2Button;
     public GameObject onPannel1PopUP;
@@ -25,6 +26,7 @@ public class StartGame : Interactable
         transform.DOScale(-0.3f, 0.1f).SetEase(Ease.Linear).SetRelative().SetLoops(2, LoopType.Yoyo).OnComplete(() =>
         {
             transform.DOScale(0, 0.1f);
+            JoinGameCube.transform.DOScale(0, 0.1f);
             PeremeterPopUp.SetActive(true);
             PeremeterPopUp.transform.DOScale(1, 0.2f).From(0);
         });
@@ -39,7 +41,7 @@ public class StartGame : Interactable
             OnComplete: () =>
             {
                 onPannel2PopUP.SetActive(true);
-                onPannel2PopUP.transform.DOScale(1f, 0.2f);
+                onPannel2PopUP.transform.DOScale(1f, 0.2f).From(0);
 
             });
     }
