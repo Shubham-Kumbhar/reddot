@@ -2346,6 +2346,7 @@ GameObject:
   - component: {fileID: 5692917694228989037}
   - component: {fileID: 3117702010035641467}
   - component: {fileID: 8216235191398342945}
+  - component: {fileID: 5595881941786269810}
   m_Layer: 5
   m_Name: peremeterPOPupCanvas
   m_TagString: Untagged
@@ -2437,6 +2438,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5595881941786269810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5305142325045862241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ce363ed7317dd94bbd6466602f00a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5700671626836379592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2573,6 +2586,7 @@ GameObject:
   - component: {fileID: 5743331232808597439}
   - component: {fileID: 6048575092681096145}
   - component: {fileID: 7501366276707909073}
+  - component: {fileID: 4487174883446865236}
   m_Layer: 5
   m_Name: peremeterPOPupCanvas
   m_TagString: Untagged
@@ -2664,6 +2678,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &4487174883446865236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6564249375668345910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ce363ed7317dd94bbd6466602f00a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6565851993144405754
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public Transform MenuTrasnform;
     public Image LoadingImage;
+    public Camera mainCam;
+
     [Header("Well Done")]
     public GameObject WellDonePannel;
     public Button playAgainbutton;
@@ -56,6 +58,9 @@ public class GameManager : MonoBehaviour
     }
     void RestartGame()
     {
+        miniMap.SetActive(false);
+        EndGameButton.gameObject.SetActive(false);
+        Destroy(MenuTrasnform.gameObject);
         Debug.Log("restart");
     }
     private void Update()
@@ -82,7 +87,8 @@ public class GameManager : MonoBehaviour
         {
             var menuTrasnformPos = MenuTrasnform.position;
             var offset = new Vector3(Random.Range(-randomSpawnRange, randomSpawnRange), 0.5f, Random.Range(-randomSpawnRange, randomSpawnRange));
-            Instantiate(RedDotPrefab, menuTrasnformPos + offset, Quaternion.identity);
+            var go = Instantiate(RedDotPrefab, menuTrasnformPos + offset, Quaternion.identity);
+            go.transform.SetParent(MenuTrasnform);
         }
     }
     void DetectZones()
